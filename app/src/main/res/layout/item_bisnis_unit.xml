@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_main_1_1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/main_card_margin_vertical"
+    android:layout_marginEnd="@dimen/main_card_margin_horizontal"
+    android:layout_marginStart="@dimen/main_card_margin_horizontal"
+    android:layout_marginTop="@dimen/main_card_margin_vertical"
+    android:foreground="?attr/selectableItemBackground"
+    card_view:cardCornerRadius="@dimen/card_recycler_corner_radius"
+    card_view:cardElevation="@dimen/card_recycler_elevation">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/img_main_card_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/name"
+            style="@style/TextAppearance.AppCompat.Large"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/img_main_card_1"
+            android:layout_marginEnd="@dimen/card_title_margin"
+            android:layout_marginStart="@dimen/card_title_margin"
+            android:layout_marginTop="@dimen/card_title_margin_top"
+            android:text="main card title"
+            android:textColor="@color/colorBlack" />
+
+        <TextView
+            android:id="@+id/detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/name"
+            android:layout_marginBottom="@dimen/card_subtitle_margin"
+            android:layout_marginEnd="@dimen/card_subtitle_margin"
+            android:layout_marginStart="@dimen/card_subtitle_margin"
+            android:layout_marginTop="@dimen/card_button_margin"
+            android:text="card subtitle" />
+
+        <ImageView
+            android:id="@+id/img_checklist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/card_title_margin"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:visibility="invisible"
+            card_view:srcCompat="@drawable/ic_check_black_24dp" />
+
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

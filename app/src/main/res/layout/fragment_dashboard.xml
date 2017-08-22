@@ -1,0 +1,128 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/ajukanBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/main_card_margin_vertical"
+        android:layout_marginLeft="@dimen/main_card_margin_horizontal"
+        android:layout_marginRight="@dimen/main_card_margin_horizontal"
+        android:foreground="?attr/selectableItemBackground"
+        card_view:cardCornerRadius="@dimen/card_recycler_corner_radius"
+        card_view:cardElevation="@dimen/card_recycler_elevation">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true">
+
+                <TextView
+                    android:id="@+id/tv_card_main_3_title"
+                    style="@style/TextAppearance.AppCompat.Large"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pengajuan"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/tv_card_main3_details"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_card_main3_subtitle"
+                    android:layout_marginTop="2dp"
+                    android:text="Pinjaman hingga 20 juta rupiah"
+                    android:textColor="@color/gray_deep" />
+
+            </LinearLayout>
+
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:layout_marginLeft="16dp"
+                android:src="@drawable/ic_assigment"
+                android:tint="@color/colorPrimary" />
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/ee"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/main_card_margin_vertical"
+        android:layout_marginLeft="@dimen/main_card_margin_horizontal"
+        android:layout_marginRight="@dimen/main_card_margin_horizontal"
+        android:foreground="?attr/selectableItemBackground"
+        card_view:cardCornerRadius="@dimen/card_recycler_corner_radius"
+        card_view:cardElevation="@dimen/card_recycler_elevation">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/xx"
+                style="@style/TextAppearance.AppCompat.Large"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/card_title_margin"
+                android:layout_marginRight="@dimen/card_title_margin"
+                android:layout_marginTop="@dimen/card_title_margin"
+                android:text="Cek Status Pinjaman"
+                android:textColor="@color/black" />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/rr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/xx"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="4dp">
+
+                <EditText
+                    android:id="@+id/password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="No. telp"
+                    android:imeActionId="@+id/login"
+                    android:imeActionLabel="@string/action_sign_in_short"
+                    android:imeOptions="actionUnspecified"
+                    android:inputType="phone"
+                    android:maxLines="1"
+                    android:singleLine="true" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <Button
+                android:id="@+id/btn_card_main1_action2"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/rr"
+                android:layout_alignRight="@+id/rr"
+                android:layout_below="@+id/rr"
+                android:text="Cek"
+                android:textColor="@color/colorAccent" />
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>
